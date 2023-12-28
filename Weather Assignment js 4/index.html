@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+          <!-- Font Awesome-->
+          <link rel="stylesheet" href="css/all.min.css"> 
+          <!-- Bootstrap-->
+          <link rel="stylesheet" href='css/bootstrap.min.css'>
+          <!-- Google fonts -->
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+          <!-- main style sheet-->
+          <link rel="stylesheet" href="css/style.css">
+        <title>Weather</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="navbar-example">
+    
+<!--Start of nav-->
+
+    <nav class="navbar navbar-expand-lg primarycolor py-4" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                <div class="mx-2">
+                    <img src="images/logo.png" alt="icon">
+                </div>
+                <div class="text-white ms-1">
+                    <h1 class="my-1 fs-6">Weather</h1>
+                    <h6 class="my-2">tagline goes here</h6>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end mb-2" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item mx-3 px-3 rounded-pill my-3">
+                        <a class="nav-link active fs-6" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item mx-3 px-3 rounded-pill my-3">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item mx-3 px-3 rounded-pill my-3">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item mx-3 px-3 rounded-pill my-3">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item mx-3 px-3 rounded-pill my-3">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start of home section -->
+     <!-- forecast header -->
+
+        <section class="cards py-5 primarycolor 5">
+            <div class="search-bar container position-relative" id="Home">
+                <div class="searchbox pt-5 d-flex justify-content-center">
+                    <div class="position-relative input-group">
+                        <input type="search" name="city" placeholder="Find your location" class="searchInput w-100 px-3 py-3 primarycolor fontcolor border-0 rounded-pill ">
+                        <button type="submit" class="btn  searchbtn secondarycolor text-white rounded-pill position-absolute end-0 top-0 bottom-0 m-2 px-4">Find</button>
+                    </div>
+                </div>                    
+
+     <!-- End of forecast Header -->
+
+     <!-- Start of weather cards -->
+                <div class="weather-info text-center rounded-2 primarycolor py-2 w-100 mx-auto mt-5">
+                  <div class="row">
+                   <div class="col-lg-4 text-start  ">
+                    <div class="timing fontcolor py-2 d-flex justify-content-around align-items-center">
+                        <div class="day pe-2">Wednesday</div>
+                        <div class="date pe-2">28December</div>
+                    </div>
+                
+                    <div class="forecast-content thirdbgcolor py-4 fixed-height">
+                        <div class="location fontcolor px-3">Cairo</div>
+                        <div class="degree d-flex justify-content-start align-items-center text-white">
+                            <div class="temp text-start px-3 fw-bold my-1">
+                                18<sup>o</sup>C
+                            </div>
+                            <div class="forecast-icon-dayone px-3 d"><img class="current-weather w-100" src="images/116.png" alt=""></div>
+                        </div>
+                        <div class="forecast-details text px-3 secondfontcolor my-4 ">Partly Cloudy</div>
+                        <span class="humidity fontcolor ps-3 px-2">
+                            <img src="images/icon-umberella.png" alt="">
+                            <span class="humidity-text">20%</span>
+                        </span>
+                        <span class="windspeed fontcolor px-2">
+                            <img src="images/icon-wind.png" alt="">
+                            <span class="windspeed-text">18km/h</span>
+                        </span>
+                        <span class="wind-direction fontcolor px-2">
+                            <img src="images/icon-compass.png" alt="">
+                            <span class="wind-direction-text">East</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center  ">
+                    <div class="timing   fontcolor py-2 d-flex justify-content-center align-items-center">
+                        <div class="daytwo ps-2">Thursday</div>
+                    </div>
+                     
+                    <div class="forecast-content fixed-height thirdbgcolor py-4 d-flex flex-column justify-content-center align-items-center">
+                        <div class="degree text-white">
+                          <div class="forecast-icon-daytwo px-3 my-2 pt-4"><img class="w-75" src="images/176.png" alt=""></div>
+                          <div class="second-day-temp text-center pt-3 px-2 fw-bold fs-1 my-1">22.3<sup>o</sup>C</div>
+                          <div class="temp-f fontcolor"> <small>14.2<sup>o</sup></small></div>
+
+                        </div>
+                        <div class="forecast-details text-two px-1 secondfontcolor my-3 pb-3 ">Patchy rain possible</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-start ">
+                    <div class="timing fontcolor py-2 d-flex justify-content-center align-items-center">
+                        <div class="daythree ps-2">Friday</div>
+                    </div>
+                     
+                    <div class="forecast-content fixed-height  thirdbgcolor py-4 d-flex flex-column justify-content-center align-items-center">
+                        <div class="degree text-white">
+                          <div class="forecast-icon-daythree px-3 my-2 pt-4"><img class="w-75" src="images/113 (1).png" alt=""></div>
+                          <div class="third-day-temp text-center pt-3 px-2 fs-1 fw-bold my-1">22.3<sup>o</sup>C</div>
+                          <div class="text-center temp-f-three fontcolor"> <small>14.2<sup>o</sup></small></div>
+                        </div>
+                        <div class="forecast-details text-three px-1 secondfontcolor my-3 pb-3 ">Sunny</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+ </section>
+
+ <!-- end of weather cards -->
+
+<!-- contact section  -->
+
+        <section class="contactus thirdbgcolor py-3">
+            <div class="container contactus-section ">
+              <div class="row">
+                <div class="col-lg-8">
+                    <div class=" py-4 d-flex justify-content-center">
+                        <div class="input-group position-relative">
+                            <input type="text" name="useremail" placeholder="Enter your email to subscribe.." class="px-3 w-100 primarycolor fontcolor border-0 rounded-pill py-3 ">
+                            <button type="submit" class="btn secondarycolor text-white rounded-pill position-absolute end-0 top-0 bottom-0 m-2 px-4">subscribe</button>
+                        </div>
+                    </div>
+                    <div class="pt-1">
+                        <p class="fontcolor copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 social-icons text-center d-flex my-4 justify-content-center">
+                 <a href="https://www.facebook.com/" class=""> <i class="socials fa-brands fa-facebook mx-1"></i></a>  
+                  <a href="https://twitter.com/x">  <i class="socials fa-brands fa-twitter mx-1"></i></a>
+                   <a href="https://www.google.com/"><i class="socials fa-brands fa-google-plus-g mx-1"></i></a> 
+                   <a href="https://www.pinterest.com/"><i class="socials fa-brands fa-pinterest mx-1"></i></a> 
+                </div> 
+              </div>
+            </div>
+        </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>    
